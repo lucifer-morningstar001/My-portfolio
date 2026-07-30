@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vansh — Full Stack Developer</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-glow glow-1"></div>
+<div class="bg-glow glow-2"></div>
+<div class="bg-glow glow-3"></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar-glass">
+  <a href="#home" class="brand">VANSH<span>.</span>DEV</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="d-flex align-items-center gap-2">
+    <a href="#contact" class="btn-neon d-none d-md-inline-flex">Let's Talk</a>
+    <button class="nav-toggle" id="navToggle"><i class='bx bx-menu'></i></button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="container-xl">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="hero-in">
+          <span class="badge-live"><span class="dot-pulse"></span> AVAILABLE FOR FREELANCE</span>
+          <h1 class="hero-title"><small>Portfolio of a</small>DEVELOPER</h1>
+          <p class="hero-desc">I'm <strong class="text-grad">Vansh</strong> — a full-stack web developer building fast, immersive, and beautifully engineered digital products for founders and teams who refuse to ship boring.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#projects" class="btn-solid"><i class='bx bx-code-alt'></i> View My Work</a>
+            <a href="#" class="btn-ghost"><i class='bx bx-download'></i> Download CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          <div class="hud-frame">
+            <div class="hud-scanline"></div>
+          </div>
+          <div class="term">
+            <div class="term-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+            <pre id="typedCode"></pre>
+          </div>
+          <div class="float-badge fb-1"><h4>50+</h4><span>Projects Shipped</span></div>
+          <div class="float-badge fb-2"><h4>4+ yrs</h4><span>Experience</span></div>
+          <div class="float-badge fb-3"><h4>98%</h4><span>Client Satisfaction</span></div>
+          <div class="float-badge fb-4"><h4>30+</h4><span>Happy Clients</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack">
+    <span><i class='bx bxl-react'></i> React</span>
+    <span><i class='bx bxl-nodejs'></i> Node.js</span>
+    <span><i class='bx bxl-javascript'></i> JavaScript</span>
+    <span><i class='bx bxl-html5'></i> HTML5</span>
+    <span><i class='bx bxl-css3'></i> CSS3</span>
+    <span><i class='bx bxl-mongodb'></i> MongoDB</span>
+    <span><i class='bx bxl-tailwind-css'></i> Tailwind</span>
+    <span><i class='bx bxl-git'></i> Git</span>
+    <span><i class='bx bxl-figma'></i> Figma</span>
+    <span><i class='bx bxl-php'></i> PHP</span>
+    <span><i class='bx bx-codepen'></i> CodeIgniter</span>
+    <span><i class='bx bx-layer'></i> Laravel</span>
+    <span><i class='bx bx-data'></i> MySQL</span>
+    <span><i class='bx bxl-photoshop'></i> Photoshop</span>
+    <span><i class='bx bx-crop-alt'></i> Canva</span>
+  </div>
+</div>
+
+<!-- ===== STATS ===== -->
+<section class="py-5" id="stats">
+  <div class="container-xl">
+    <div class="row g-4">
+      <div class="col-6 col-lg-3 reveal">
+        <div class="stat-card"><div class="stat-num text-grad"><span class="counter" data-target="120">0</span>+</div><div class="stat-label">Projects Done</div></div>
+      </div>
+      <div class="col-6 col-lg-3 reveal">
+        <div class="stat-card"><div class="stat-num text-grad"><span class="counter" data-target="35">0</span>+</div><div class="stat-label">Happy Clients</div></div>
+      </div>
+      <div class="col-6 col-lg-3 reveal">
+        <div class="stat-card"><div class="stat-num text-grad"><span class="counter" data-target="4">0</span>+</div><div class="stat-label">Years Experience</div></div>
+      </div>
+      <div class="col-6 col-lg-3 reveal">
+        <div class="stat-card"><div class="stat-num text-grad"><span class="counter" data-target="15">0</span>+</div><div class="stat-label">Awards Won</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container-xl">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-5 reveal">
+        <div class="about-frame">
+          <div class="corner tl"></div><div class="corner br"></div>
+          <i class='bx bxs-quote-alt-left' style="font-size:2rem;color:var(--magenta);"></i>
+          <p class="mt-3" style="color:#d5d6ee;font-size:1.05rem;line-height:1.8;">Code is the closest thing we have to magic — I just write the spells.</p>
+          <div class="mt-4 d-flex flex-wrap">
+            <span class="chip"><i class='bx bx-map'></i> Based in India</span>
+            <span class="chip"><i class='bx bx-briefcase'></i> Open to remote</span>
+            <span class="chip"><i class='bx bx-coffee'></i> Fueled by chai</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal">
+        <span class="eyebrow">Who I Am</span>
+        <h2 class="section-title">Building interfaces that feel <span class="text-grad">alive</span>.</h2>
+        <p class="section-sub" style="max-width:100%;">I'm Vansh, a full-stack web developer specializing in performant, animation-rich web applications. From pixel-perfect frontends to robust backend systems, I turn ambitious ideas into products people actually enjoy using. My process blends clean engineering with a designer's eye — because a fast site that looks ordinary just isn't finished yet.</p>
+        <div class="row g-4 mt-2">
+          <div class="col-sm-6">
+            <h5 class="font-rajdhani fw-bold mb-2"><i class='bx bx-target-lock text-grad' style="-webkit-text-fill-color:var(--cyan);"></i> Mission</h5>
+            <p class="section-sub">Ship products that are as fast as they are beautiful, with zero compromise.</p>
+          </div>
+          <div class="col-sm-6">
+            <h5 class="font-rajdhani fw-bold mb-2"><i class='bx bx-bulb' style="color:var(--cyan);"></i> Approach</h5>
+            <p class="section-sub">Design-driven development — every animation and interaction has a purpose.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="container-xl">
+    <div class="text-center mx-auto reveal" style="max-width:640px;">
+      <span class="eyebrow justify-content-center">Tech Arsenal</span>
+      <h2 class="section-title">Skills &amp; <span class="text-grad">Technologies</span></h2>
+      <p class="section-sub mx-auto">The tools I reach for to turn coffee and ideas into shipped products.</p>
+    </div>
+    <div class="row g-4 mt-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="skill-card"><i class='bx bxl-html5'></i><h5>HTML5</h5>
+          <div class="d-flex justify-content-between font-mono" style="font-size:.75rem;color:var(--muted);"><span>Proficiency</span><span>98%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="98"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="skill-card"><i class='bx bxl-css3'></i><h5>CSS3</h5>
+          <div class="d-flex justify-content-between font-mono" style="font-size:.75rem;color:var(--muted);"><span>Proficiency</span><span>96%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="96"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="skill-card"><i class='bx bxl-react'></i><h5>React JS</h5>
+          <div class="d-flex justify-content-between font-mono" style="font-size:.75rem;color:var(--muted);"><span>Proficiency</span><span>93%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="93"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="skill-card"><i class='bx bxl-php'></i><h5>PHP</h5>
+          <div class="d-flex justify-content-between font-mono" style="font-size:.75rem;color:var(--muted);"><span>Proficiency</span><span>92%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="92"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="skill-card"><i class='bx bx-codepen'></i><h5>CodeIgniter</h5>
+          <div class="d-flex justify-content-between font-mono" style="font-size:.75rem;color:var(--muted);"><span>Proficiency</span><span>90%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="90"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="skill-card"><i class='bx bx-layer'></i><h5>Laravel</h5>
+          <div class="d-flex justify-content-between font-mono" style="font-size:.75rem;color:var(--muted);"><span>Proficiency</span><span>85%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="85"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="skill-card"><i class='bx bx-data'></i><h5>MySQL</h5>
+          <div class="d-flex justify-content-between font-mono" style="font-size:.75rem;color:var(--muted);"><span>Proficiency</span><span>88%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="88"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="skill-card"><i class='bx bxl-nodejs'></i><h5>Node.js &amp; Express</h5>
+          <div class="d-flex justify-content-between font-mono" style="font-size:.75rem;color:var(--muted);"><span>Proficiency</span><span>90%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="90"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="skill-card"><i class='bx bx-git-branch'></i><h5>Git &amp; DevOps</h5>
+          <div class="d-flex justify-content-between font-mono" style="font-size:.75rem;color:var(--muted);"><span>Proficiency</span><span>82%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="82"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mx-auto reveal mt-5" style="max-width:640px;">
+      <span class="eyebrow justify-content-center">Design Toolkit</span>
+      <h3 class="section-title" style="font-size:clamp(1.5rem,3vw,2.2rem);">Software I <span class="text-grad">Design With</span></h3>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4 reveal">
+      <div class="tool-badge"><i class='bx bxl-photoshop'></i><span>Photoshop</span></div>
+      <div class="tool-badge"><i class='bx bx-crop-alt'></i><span>Canva</span></div>
+      <div class="tool-badge"><i class='bx bxl-figma'></i><span>Figma</span></div>
+      <div class="tool-badge"><i class='bx bxl-tailwind-css'></i><span>Tailwind CSS</span></div>
+      <div class="tool-badge"><i class='bx bxl-mongodb'></i><span>MongoDB</span></div>
+      <div class="tool-badge"><i class='bx bxl-visual-studio'></i><span>VS Code</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="container-xl">
+    <div class="text-center mx-auto reveal" style="max-width:640px;">
+      <span class="eyebrow justify-content-center">What I Do</span>
+      <h2 class="section-title">Services I <span class="text-grad">Offer</span></h2>
+    </div>
+    <div class="row g-4 mt-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="serv-card"><span class="serv-num">01</span><i class='bx bx-code-curly'></i><h5>Web Development</h5><p>Full-stack builds with clean architecture, from database to deploy.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="serv-card"><span class="serv-num">02</span><i class='bx bx-palette'></i><h5>UI/UX Design</h5><p>Interfaces that guide, delight, and convert — built mobile-first.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="serv-card"><span class="serv-num">03</span><i class='bx bx-bot'></i><h5>AI Integrations</h5><p>Chatbots, automations, and AI-powered features baked into your product.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="serv-card"><span class="serv-num">04</span><i class='bx bx-rocket'></i><h5>Performance &amp; SEO</h5><p>Sites tuned for speed and discoverability from the first commit.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="container-xl">
+    <div class="text-center mx-auto reveal" style="max-width:640px;">
+      <span class="eyebrow justify-content-center">Selected Work</span>
+      <h2 class="section-title">Featured <span class="text-grad">Projects</span></h2>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap mt-4 reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="ecom">E-Commerce</button>
+      <button class="filter-btn" data-filter="ai">AI Tools</button>
+    </div>
+    <div class="row g-4 mt-3" id="projectGrid">
+
+      <div class="col-md-6 col-lg-4 proj-item reveal" data-cat="web">
+        <div class="proj-card">
+          <a href="#" class="proj-link"><i class='bx bx-link-external'></i></a>
+          <div class="proj-thumb"><div class="grad-bg" style="background:linear-gradient(135deg,#ff2ec4,#7c3aff);"></div><i class='bx bx-line-chart'></i></div>
+          <div class="proj-body">
+            <h5>OripioFin Dashboard</h5>
+            <p>A fintech analytics dashboard with live charts and a custom pink/purple brand system.</p>
+            <div class="proj-tags"><span>Bootstrap</span><span>Chart.js</span><span>CodeIgniter</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 proj-item reveal" data-cat="ecom">
+        <div class="proj-card">
+          <a href="#" class="proj-link"><i class='bx bx-link-external'></i></a>
+          <div class="proj-thumb"><div class="grad-bg" style="background:linear-gradient(135deg,#7c3aff,#00eaff);"></div><i class='bx bx-diamond'></i></div>
+          <div class="proj-body">
+            <h5>Studios</h5>
+            <p>A gold &amp; cream luxury landing page for a creator brand, built for conversions.</p>
+            <div class="proj-tags"><span>HTML/CSS</span><span>GSAP</span><span>JS</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 proj-item reveal" data-cat="ai">
+        <div class="proj-card">
+          <a href="#" class="proj-link"><i class='bx bx-link-external'></i></a>
+          <div class="proj-thumb"><div class="grad-bg" style="background:linear-gradient(135deg,#00eaff,#ff2ec4);"></div><i class='bx bx-message-square-dots'></i></div>
+          <div class="proj-body">
+            <h5>WhatsApp AI Agent</h5>
+            <p>Multi-agent WhatsApp automation powered by Gemini with context caching.</p>
+            <div class="proj-tags"><span>PHP</span><span>Gemini API</span><span>Webhooks</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 proj-item reveal" data-cat="web">
+        <div class="proj-card">
+          <a href="#" class="proj-link"><i class='bx bx-link-external'></i></a>
+          <div class="proj-thumb"><div class="grad-bg" style="background:linear-gradient(135deg,#ff2ec4,#00eaff);"></div><i class='bx bx-shield-quarter'></i></div>
+          <div class="proj-body">
+            <h5>CI Auth System</h5>
+            <p>A secure CodeIgniter authentication system with account activation flows.</p>
+            <div class="proj-tags"><span>CI3</span><span>MySQL</span><span>PHP</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 proj-item reveal" data-cat="ecom">
+        <div class="proj-card">
+          <a href="#" class="proj-link"><i class='bx bx-link-external'></i></a>
+          <div class="proj-thumb"><div class="grad-bg" style="background:linear-gradient(135deg,#7c3aff,#ff2ec4);"></div><i class='bx bx-cart'></i></div>
+          <div class="proj-body">
+            <h5>ChemPlink Plumbing</h5>
+            <p>A full plumbing business site converted from prototype into a native Elementor build.</p>
+            <div class="proj-tags"><span>Elementor</span><span>WordPress</span><span>Tailwind</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 proj-item reveal" data-cat="ai">
+        <div class="proj-card">
+          <a href="#" class="proj-link"><i class='bx bx-link-external'></i></a>
+          <div class="proj-thumb"><div class="grad-bg" style="background:linear-gradient(135deg,#00eaff,#7c3aff);"></div><i class='bx bx-microphone'></i></div>
+          <div class="proj-body">
+            <h5>Voice-to-Text Assistant</h5>
+            <p>Speech-to-text pipeline integrated into a client dashboard for hands-free logging.</p>
+            <div class="proj-tags"><span>Speech API</span><span>JS</span><span>Node</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+  <div class="container-xl">
+    <div class="row gy-5">
+      <div class="col-lg-5 reveal">
+        <span class="eyebrow">Career Path</span>
+        <h2 class="section-title">Experience &amp; <span class="text-grad">Timeline</span></h2>
+        <p class="section-sub" style="max-width:100%;">A few years, a lot of debugging, and a growing list of things shipped to production.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <span class="tl-year">2024 — PRESENT</span>
+            <h5>Full Stack Developer, Freelance</h5>
+            <p>Building fintech dashboards, WhatsApp AI automations, and Elementor-powered business sites for clients across industries.</p>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <span class="tl-year">2023</span>
+            <h5>Frontend Developer</h5>
+            <p>Focused on CodeIgniter/WordPress projects, dashboard UIs, and pixel-accurate landing pages.</p>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <span class="tl-year">2022</span>
+            <h5>Junior Web Developer</h5>
+            <p>Started building CI3 authentication systems and learned the fundamentals of production debugging.</p>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <span class="tl-year">2021</span>
+            <h5>Started the Journey</h5>
+            <p>First lines of HTML &amp; CSS — the beginning of an obsession with building things for the web.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials">
+  <div class="container-xl">
+    <div class="text-center mx-auto reveal" style="max-width:640px;">
+      <span class="eyebrow justify-content-center">Kind Words</span>
+      <h2 class="section-title">Client <span class="text-grad">Testimonials</span></h2>
+    </div>
+    <div class="row g-4 mt-4">
+      <div class="col-md-4 reveal">
+        <div class="quote-card"><i class='bx bxs-quote-alt-left bx-comment'></i>
+          <p>"Vansh delivered our dashboard ahead of schedule and it looks better than what we pitched to investors."</p>
+          <div class="d-flex align-items-center gap-3"><div class="avatar-ring">R</div><div><div class="quote-name">Rohan Mehta</div><div class="quote-role">Founder, OripioFin</div></div></div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal">
+        <div class="quote-card"><i class='bx bxs-quote-alt-left bx-comment'></i>
+          <p>"Meticulous, communicative, and genuinely cares about the details. Our landing page conversions doubled."</p>
+          <div class="d-flex align-items-center gap-3"><div class="avatar-ring">A</div><div><div class="quote-name">Aisha Khan</div><div class="quote-role">Creative Director, Cavella</div></div></div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal">
+        <div class="quote-card"><i class='bx bxs-quote-alt-left bx-comment'></i>
+          <p>"He debugged a webhook issue that had stumped two other developers in under an hour. Rare talent."</p>
+          <div class="d-flex align-items-center gap-3"><div class="avatar-ring">S</div><div><div class="quote-name">Sameer Verma</div><div class="quote-role">CTO, Tadawulaty</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section id="process">
+  <div class="container-xl">
+    <div class="text-center mx-auto reveal" style="max-width:640px;">
+      <span class="eyebrow justify-content-center">How I Work</span>
+      <h2 class="section-title">My <span class="text-grad">Process</span></h2>
+    </div>
+    <div class="row g-4 mt-4 text-center">
+      <div class="col-6 col-lg-3 reveal"><div class="proc-card"><div class="proc-num">01</div><h5>Discover</h5><p>Understand goals, users, and constraints before writing a line of code.</p></div></div>
+      <div class="col-6 col-lg-3 reveal"><div class="proc-card"><div class="proc-num">02</div><h5>Design</h5><p>Wireframe and prototype the experience with intention, not defaults.</p></div></div>
+      <div class="col-6 col-lg-3 reveal"><div class="proc-card"><div class="proc-num">03</div><h5>Build</h5><p>Clean, tested, well-structured code shipped in tight iterations.</p></div></div>
+      <div class="col-6 col-lg-3 reveal"><div class="proc-card"><div class="proc-num">04</div><h5>Launch</h5><p>Deploy, monitor, and refine based on real usage data.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container-xl">
+    <div class="contact-card reveal">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <span class="eyebrow">Get In Touch</span>
+          <h2 class="section-title">Let's build something <span class="text-grad">extraordinary</span>.</h2>
+          <p class="section-sub" style="max-width:100%;">Have a project in mind? I'm currently taking on new freelance work — let's talk about it.</p>
+          <div class="mt-4">
+            <div class="contact-info-item"><i class='bx bx-envelope'></i><div><div class="fw-semibold">Email</div><div class="text-muted-custom section-sub">hello@vansh.dev</div></div></div>
+            <div class="contact-info-item"><i class='bx bx-phone'></i><div><div class="fw-semibold">Phone</div><div class="section-sub">+91 98765 43210</div></div></div>
+            <div class="contact-info-item"><i class='bx bx-map'></i><div><div class="fw-semibold">Location</div><div class="section-sub">Ludhiana, Punjab, India</div></div></div>
+          </div>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="social-orb"><i class='bx bxl-github'></i></a>
+            <a href="#" class="social-orb"><i class='bx bxl-linkedin'></i></a>
+            <a href="#" class="social-orb"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="social-orb"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label-neon">Name</label>
+                <input type="text" class="form-control form-control-neon" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-neon">Email</label>
+                <input type="email" class="form-control form-control-neon" placeholder="you@email.com" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label-neon">Subject</label>
+                <input type="text" class="form-control form-control-neon" placeholder="Project inquiry">
+              </div>
+              <div class="col-12">
+                <label class="form-label-neon">Message</label>
+                <textarea class="form-control form-control-neon" rows="4" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-solid border-0 w-100 justify-content-center">Send Message <i class='bx bx-send'></i></button>
+              </div>
+            </div>
+          </form>
+          <div id="formSuccess" class="mt-3 font-mono" style="color:#3cff9e; display:none; font-size:.85rem;">&gt; Message sent successfully. I'll get back to you soon.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container-xl">
+    <div class="row align-items-center gy-4">
+      <div class="col-md-4">
+        <a href="#home" class="footer-brand brand">VANSH X Rivansh <span>.</span>DEV</a>
+        <p class="section-sub mt-2">Crafting fast, futuristic web experiences — one commit at a time.</p>
+      </div>
+      <div class="col-md-4 text-md-center">
+        <p class="section-sub mb-0">&copy; 2026 Vansh. All rights reserved.</p>
+      </div>
+      <div class="col-md-4 d-flex justify-content-md-end justify-content-start">
+        <a href="#home" class="back-to-top"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
